@@ -27,6 +27,12 @@ public class stack {
 	}
 
 
+/*  This function get a String represents arithmetic expression and check
+ *  weather the parentheses are in correct order. for example:
+ *  [(3+4) * (7-9)] - OK
+ *  [(5-1) * 3) - Not OK
+ */
+	
 	public static boolean Q1(String num){
 
 		Stack<Character> st = new Stack<Character>();
@@ -57,7 +63,12 @@ public class stack {
 		else return false;
 	}
 
-
+/* This function get a String represents decimal number and check
+ * and check if the digits after the dot are palindromic to the digits
+ * before the dot. For example:
+ * 1234.4321 - OK
+ * 1234.54 - Not OK
+ */
 
 	public static boolean Q2(String num) {
 
