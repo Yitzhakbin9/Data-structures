@@ -1,12 +1,12 @@
-package BinaryTrees;
+package BinarySearchTree;
 
 public class Node {
 
 	
-	int data;
+	double data;
 	Node left , right;
 	
-	public Node(int d) {
+	public Node(double d) {
 		this.data = d;
 		this.left = null;
 		this.right = null;

@@ -33,11 +33,11 @@ public class stack {
  *  [(5-1) * 3) - Not OK
  */
 	
+	
 	public static boolean Q1(String num){
 
 		Stack<Character> st = new Stack<Character>();
 		for (int i = 0; i < num.length(); i++) {
-//			if (st.empty()) return false;
 			char x = num.charAt(i);
 			if (x == '(' || x== '[' || x== '{') st.push(x);
 
@@ -63,12 +63,14 @@ public class stack {
 		else return false;
 	}
 
+
 /* This function get a String represents decimal number and check
  * and check if the digits after the dot are palindromic to the digits
  * before the dot. For example:
  * 1234.4321 - OK
  * 1234.54 - Not OK
  */
+	
 
 	public static boolean Q2(String num) {
 
