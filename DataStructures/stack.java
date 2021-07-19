@@ -34,34 +34,34 @@ public class stack {
  */
 	
 	
-	public static boolean Q1(String num){
+// 	public static boolean Q1(String num){
 
-		Stack<Character> st = new Stack<Character>();
-		for (int i = 0; i < num.length(); i++) {
-			char x = num.charAt(i);
-			if (x == '(' || x== '[' || x== '{') st.push(x);
+// 		Stack<Character> st = new Stack<Character>();
+// 		for (int i = 0; i < num.length(); i++) {
+// 			char x = num.charAt(i);
+// 			if (x == '(' || x== '[' || x== '{') st.push(x);
 
-			switch (x){
-			case ')' :
-				if (st.peek() == '(') st.pop();
-				break;
+// 			switch (x){
+// 			case ')' :
+// 				if (st.peek() == '(') st.pop();
+// 				break;
 
-			case ']' :
-				if (st.peek() == '[') st.pop();
-				break;
+// 			case ']' :
+// 				if (st.peek() == '[') st.pop();
+// 				break;
 
-			case '}' :
-				if (st.peek() == '{') st.pop();
-				break;
+// 			case '}' :
+// 				if (st.peek() == '{') st.pop();
+// 				break;
 
-			default:
-				break;
-			}
+// 			default:
+// 				break;
+// 			}
 
-		}
-		if (st.empty()) return true;
-		else return false;
-	}
+// 		}
+// 		if (st.empty()) return true;
+// 		else return false;
+// 	}
 
 
 /* This function get a String represents decimal number and check
